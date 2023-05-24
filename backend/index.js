@@ -9,18 +9,15 @@ const app = express()
 
 const port = 5000
 
-// const corsOptions = {
-//     origin: ""
-// }
+const corsOptions = {
+    origin: "https://frontend-notebook.onrender.com"
+}
 
-app.use(cors())
-// app.use(cors( {
-//     origin: ["http://localhost:3000", "https://abhishek-joshi123.github.io"]
-// }))
+app.use(cors(corsOptions))
 
-app.use(express.json())    //   thi srequired to send request..
+app.use(express.json())    //   this srequired to send request..
+
 // available routes..
-
 app.use('/api/auth', require('./routes/auth'))
 app.use('/api/notes', require('./routes/notes'))
 
