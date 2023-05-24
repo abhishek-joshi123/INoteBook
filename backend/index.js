@@ -9,6 +9,10 @@ const app = express()
 
 const port = 5000
 
+// const corsOptions = {
+//     origin: ""
+// }
+
 app.use(cors())
 // app.use(cors( {
 //     origin: ["http://localhost:3000", "https://abhishek-joshi123.github.io"]

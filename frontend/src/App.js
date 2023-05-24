@@ -14,7 +14,6 @@ function App() {
   useEffect(() => {
     fetch("https://abhishek-joshi.onrender.com")
       .then((res) => res.json())
-      .then((data) => setMessage(data.message));
   },[]);
 
   const [alert, setAlert] = useState(null);
