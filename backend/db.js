@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+require('dotenv').config();
 
 const url = "mongodb+srv://Abhishek-Joshi-123:Abhi123@INoteBook.q24cilx.mongodb.net/iNoteBook"
 
