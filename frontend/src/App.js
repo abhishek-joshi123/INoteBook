@@ -7,7 +7,7 @@ import Signin from './components/Signin';
 import Signup from './components/Signup'; 
 import NoteState from './context/notes/noteState';
 import Alert from './components/Alert';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() { 
 
