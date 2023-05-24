@@ -1,0 +1,136 @@
+
+
+.enotes-info {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    transform: translate(-45%, -45%);
+    transition: 200ms ease-in-out;
+    background-color: #9de9e6;
+    border: 1px solid rgb(169, 169, 169);    
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cross {
+    margin: 0 30px;   
+    background: none;
+    border: none;
+    font-size: 5rem;
+    cursor: pointer;
+    color: #ff2b2b;
+    opacity: 0.8;
+    translate: transform(1s);
+}
+
+.cross:hover {
+    transform: scale(0.8);
+}
+
+.enotes-info h1{
+    margin: 30px;
+    margin-left: 60px;
+    font-size: 50px;    
+    color: #5b1fe7;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto Slab', serif;
+}
+
+.enotes-info form{
+    background-color: #cce4eb;
+    margin: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    width: 80%;
+    border: 1px solid rgb(169, 169, 169);    
+    border-radius: 20px;
+}
+
+.etittle{
+    color: #009dff;
+    margin: 10px 0;
+}
+
+.edescription{
+    color: #009dff;
+    margin: 10px 0;
+}
+
+.etag{
+    color: #009dff;
+    margin: 10px 0;
+}
+
+ h4{
+    font-size: 1.5rem;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.einput-box {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid gray; 
+    border-radius: 10px;
+}
+
+.einput-description{
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid gray; 
+    border-radius: 10px;
+    resize: none;
+}
+
+.enotes-info form button {
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(-135deg, rgb(97, 87, 255) 0%, rgb(153, 51, 255) 100%);
+    translate: transform(1s);
+}
+
+.enotes-info form button:hover {
+    transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 1180px){
+
+    .enotes-info {
+        width: 60%;
+    }
+
+    .enotes-info h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+
+    .enotes-info {
+        width: 90%;
+    }
+
+    .enotes-info h1 {
+        font-size: 40px;
+    }
+}

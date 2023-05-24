@@ -1,0 +1,70 @@
+
+.Success, .Error {
+    display: flex;
+    width: 99%;
+    position: absolute;
+    top: 50px;
+    left: 0%;
+}
+
+.Success h2, .Error h2 {
+    margin: 2px  20px;
+    font-size: 3rem;
+}
+
+.Success p, .Error p {
+    margin: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+@media screen and (max-width: 700px) { 
+    
+    .Success h2, .Error h2{
+        margin: 15px 20px;
+        font-size: 1.5rem;
+    }
+    
+    .Success p, .Error p{
+        font-size: 1rem;
+    }
+} 
+
+
+@media screen and (max-width: 450px) {
+    
+    .Success h2, .Error h2 {
+        font-size: 1.2rem;
+    }
+    
+    .Success p, .Error p {
+        font-size: 0.8rem;
+    }
+} 
+
+.Success {
+    background-color: #cdf0d1;
+}
+
+.Success h2 {
+    color: #1ac803;
+}
+
+.Success p {
+    color: #1ac803;
+}
+
+
+.Error {
+    background-color: #f0cdcd;
+}
+
+.Error h2 {
+    color: #c80303;
+}
+
+.Error p {
+    color: #c80303;
+}

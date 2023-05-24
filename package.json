@@ -1,0 +1,22 @@
+{
+    "name": "inotebook",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "http://abhishek-joshi123.github.io/INoteBook",
+    "scripts": {
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build",
+      "build": "react-scripts build",
+      "test": "react-scripts test",
+      "eject": "react-scripts eject",
+      "install-server": "cd backend && npm install",
+      "start-server": "cd backend && node app.js",
+      "install-client": "cd frontend && npm install",
+      "build-client": "cd frontend && npm run build",
+      "start-client": "cd frontend && npm run start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+  }
+  

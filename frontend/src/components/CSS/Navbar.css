@@ -1,0 +1,148 @@
+
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(31, 41, 55);
+    display: flex;
+}
+
+.nav-logo {
+    width: 50px;
+    height: 100%;
+    padding-left: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-toggle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 15px 20px;
+}
+
+.nav-toggle li{
+    list-style: none;
+}
+
+.nav-toggle li a{
+    color: antiquewhite;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.25rem;
+}
+
+.nav-toggle li a:hover{
+    color: white;
+}
+
+.heading {
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
+    color: aliceblue;
+    text-align: center;
+}
+
+.User{
+    width: 30%;
+    margin-left: 50px;
+    margin-right: 130px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+}
+
+.User span {
+    cursor: pointer;
+}
+
+.User span:hover {
+    color: #1869ff;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 90px;
+    margin: 0 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    background-color: #1869ff;
+    color: antiquewhite;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: transform(1s);
+}
+
+.nav-btn:hover {
+    transform: scale(0.9);
+    background-color: #0059ff;
+    border: 1px solid white;
+}
+
+@media screen and (max-width: 1100px) {
+
+        .User{
+            width: 20%;
+        }
+  }
+
+@media screen and (max-width: 950px) {
+        .heading {
+            width: 300px;
+        }
+
+        .heading h1{
+            font-size: 15px;
+        }
+  }
+
+@media screen and (max-width: 700px) {
+        .heading {
+            display: none;
+        }
+  }
+
+@media screen and (max-width: 500px) {
+        
+    .nav-toggle li a{
+        font-size: 0.8rem;
+    }
+        
+    .nav-toggle{
+        margin: 15px 5px;
+    }
+
+    .User{
+        margin-left: 60px;
+    }
+
+    .User span{
+        font-size: 0.8rem;
+    }
+  }
+
+@media screen and (max-width: 400px) {
+        
+    .nav-toggle li a{
+        font-size: 0.6rem;
+    }
+
+    .User{
+        margin-left: 40px;
+    }
+
+    .User span{
+        font-size: 0.6rem;
+    }
+  }

@@ -1,0 +1,113 @@
+
+.signin {
+    height: 93.7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ace3ff, #96ffc2);
+}
+
+.top-heading {
+    width: 100%;
+    text-align: center;
+}
+
+.top-heading h1{
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+    color: #4b1abf;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sign{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 90%;
+    max-width: 400px;
+    background-color: #fff;
+    border: 1px solid rgb(169, 169, 169);    
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sign h3 {
+    height: 50px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Amazon Ember",Arial,sans-serif;
+    margin: 0 0 10px 20px;
+    color: #00aeff;
+}
+
+.sign input {
+    margin: 0 20px;
+    padding: 10px;
+    margin-bottom: 25px;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.sign a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sign button {
+    margin: 0 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    translate: transform(1s);
+}
+
+.sign button:hover {
+    transform: scale(1.1);
+}
+
+.login {
+    background: linear-gradient(-135deg, rgb(97, 87, 255) 0%, rgb(153, 51, 255) 100%);
+}
+
+.new , .back{
+    background: linear-gradient(to right, rgb(0, 200, 255) 0%, rgb(6, 252, 223) 100%);
+}
+
+.sign .para {
+    margin-bottom: 25px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.notice {
+    margin-top: 40px;
+}
+.notice span{
+    color: blue;    
+    cursor: pointer;
+}
+.notice span:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 450px) {
+        
+    .sign button {
+        font-size: 1rem;
+        margin: 0 60px;
+        margin-bottom: 20px;
+    }
+    
+  }

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+
+.container {
+    width: 100%;
+    background-color: #87c0da;
+    display: flex;
+} 
+
+
+.notes-comp {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    padding-bottom: 5rem;
+}
+
+.empty{
+    height: 50%    ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.empty span {
+    font-size: 3rem;
+    font-family: 'Roboto Slab', serif;
+    color: #e9f4fa;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.notes-comp h2{
+    text-align: center;
+    margin: 80px 0;
+    font-size: 70px;    
+    color: #5b1fe7;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto Slab', serif;
+}
+
+@media screen and (max-width: 900px){
+    
+    .container {
+        flex-direction: column;
+    }
+
+    .notes-comp {
+        height: 100%;
+        overflow: hidden;
+    }
+}
