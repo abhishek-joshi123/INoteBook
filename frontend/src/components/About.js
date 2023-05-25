@@ -27,7 +27,7 @@ export default function About() {
 
           <div className="column">
             <div className="About-card">
-              <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Abhishek Joshi" />
+              <img src="https://www.trickscity.com/wp-content/uploads/2016/11/K0cAXP3.jpg" alt="Abhishek Joshi" />
               <div className="cont">
                 <h2>Abhishek Joshi</h2>
                 <p className="About-title">Developer & Founder</p>

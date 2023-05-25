@@ -86,4 +86,24 @@
     .notes-info {
         width: 100%;
     }
+
+    .notes-info h1{
+        font-size: 60px;
+    }
+
+    .notes-info form{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    .notes-info h1{
+        font-size: 50px;
+    }
+
+    .notes-info form{
+        width: 90%;
+    }
 }

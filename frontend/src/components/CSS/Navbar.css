@@ -19,7 +19,7 @@
 .nav-toggle {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 15px 20px;
+    margin: 10px 20px;
 }
 
 .nav-toggle li{
@@ -99,50 +99,70 @@
 
 @media screen and (max-width: 950px) {
         .heading {
-            width: 300px;
+            width: 280px;
         }
 
         .heading h1{
             font-size: 15px;
         }
-  }
 
-@media screen and (max-width: 700px) {
-        .heading {
-            display: none;
+        .User{
+            font-size: 0.8rem;
         }
   }
 
+@media screen and (max-width: 725px) {
+        .heading {
+            display: none;
+        }
+
+        .User {
+            margin-left: 80px;
+        }
+        
+  }
+
 @media screen and (max-width: 500px) {
-        
-    .nav-toggle li a{
-        font-size: 0.8rem;
-    }
-        
-    .nav-toggle{
-        margin: 15px 5px;
+
+    .nav-btn {
+        width: 30px;
+        background-image: url(../images/log-out.png);
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        overflow: hidden;
+        background-size: 30px;
     }
 
     .User{
-        margin-left: 60px;
+        width: 30%;
+        margin-right: 100px;
     }
 
-    .User span{
-        font-size: 0.8rem;
+    .nav-toggle {
+        margin: 14px 10px;
+    }    
+    
+    .nav-toggle li a{
+        padding: 5px;
+        font-size: 1rem;
     }
+
   }
 
 @media screen and (max-width: 400px) {
-        
-    .nav-toggle li a{
-        font-size: 0.6rem;
-    }
 
     .User{
-        margin-left: 40px;
-    }
-
-    .User span{
+        width: 20%;
         font-size: 0.6rem;
     }
+
+    .nav-toggle {
+        margin: 12px 10px;
+    }    
+    
+    .nav-toggle li a{
+        font-size: 0.8rem;
+    }
+
   }
+
