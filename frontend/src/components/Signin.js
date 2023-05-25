@@ -4,6 +4,8 @@ import './CSS/Signin.css'
 
 export default function Signin(props) {
 
+  const host = process.env.REACT_APP_LOCAL_HOST
+
   const {showAlert} = props
   let Navigate = useNavigate()
   const [credentials, setcredentials] = useState({email: "", password: ""})
@@ -11,7 +13,7 @@ export default function Signin(props) {
   const handleClick = async (e) => {
       e.preventDefault();
       
-      const response = await fetch('http://localhost:5000/api/auth/login', {
+      const response = await fetch(`${host}/api/auth/login`, {
           method: 'POST',
           headers: {
             'content-type': 'application/json',

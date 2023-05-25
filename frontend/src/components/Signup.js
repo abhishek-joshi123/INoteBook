@@ -4,6 +4,8 @@ import './CSS/Signin.css'
 
 export default function Signup(props) {
 
+  const host = process.env.REACT_APP_LOCAL_HOST
+
     const {showAlert} = props
 
     let Navigate = useNavigate()
@@ -12,7 +14,7 @@ export default function Signup(props) {
   const handleClick = async (e) => {
       e.preventDefault();
       const {name, email, password} = credentials
-      const response = await fetch('http://localhost:5000/api/auth/createuser', {
+      const response = await fetch(`${host}/api/auth/createuser`, {
 
           method: 'POST',
           headers: {

@@ -3,7 +3,7 @@ import NoteContext from "./noteContext";
 
 const NoteState = (props) => {
 
-      const host = "http://localhost:5000"
+      const host = process.env.REACT_APP_LOCAL_HOST
 
       const [notes, setnotes] = useState([])
       const [click, setclick] = useState(false)
