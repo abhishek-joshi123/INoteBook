@@ -4,10 +4,10 @@ import './CSS/Spinner.css'
 
 export default function Spinner() {
   return (
-    <div>
-      <div className="spin">
+      <div className='Spiner-comp'>
+        <div className="spin">
             <img src={loading} alt="loading" />
+        </div>
       </div>
-    </div>
   )
 }
