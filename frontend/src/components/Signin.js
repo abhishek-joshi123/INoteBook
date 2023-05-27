@@ -7,7 +7,7 @@ export default function Signin(props) {
 
   const host = process.env.REACT_APP_LOCAL_HOST
 
-  const {showAlert} = props
+  const {showAlert, setprogress} = props
   let Navigate = useNavigate()
   const [credentials, setcredentials] = useState({email: "", password: ""})
   const [loading, setloading] = useState(false)
@@ -15,31 +15,35 @@ export default function Signin(props) {
   const handleClick = async (e) => {
       e.preventDefault();
       setloading(true)
+      setprogress(30)
       const response = await fetch(`${host}/api/auth/login`, {
         method: 'POST',
         headers: {
           'content-type': 'application/json',
         }, 
         body: JSON.stringify({email: credentials.email, password: credentials.password})
-        });
+      });
+        setprogress(50)
         const json = await response.json() 
-
+        setprogress(70)
+        
         if(json.success){
           // save the auth-token and redirect
-            localStorage.setItem('token', json.authToken)
-            localStorage.setItem('user', credentials.email)
-            Navigate('/')
-            showAlert("Success", "You are logged in Successfully")
+          localStorage.setItem('token', json.authToken)
+          localStorage.setItem('user', credentials.email)
+          Navigate('/')
+          showAlert("Success", "You are logged in Successfully")
+        }
+        else{ 
+          if(json.esuccess){
+            showAlert("Error", json.error)
           }
-          else{ 
-            if(json.esuccess){
-              showAlert("Error", json.error)
-            }
-            else{
-              showAlert("Error", json.errors[0].msg)
-            }
+          else{
+            showAlert("Error", json.errors[0].msg)
           }
+        }
         setloading(false)
+        setprogress(100)
     }
 
     const onChange = (e) => {

@@ -8,6 +8,7 @@ import Signup from './components/Signup';
 import NoteState from './context/notes/noteState';
 import Alert from './components/Alert';
 import { useState, useEffect } from 'react';
+import LoadingBar from 'react-top-loading-bar';
 
 function App() { 
 
@@ -15,6 +16,8 @@ function App() {
     fetch("https://abhishek-joshi.onrender.com")
       .then((res) => res.json())
   },[]);
+
+  const [progress, setprogress] = useState(0)
 
   const [alert, setAlert] = useState(null);
 
@@ -31,12 +34,16 @@ function App() {
       <NoteState>
         <Router>
           <Navbar/>
+          <LoadingBar
+            color = '#f11946'
+            progress={progress}
+          />
           <Alert alert={alert}/>
           <Routes>
             <Route path='/' element = {<Home showAlert = {showAlert} />}></Route>
             <Route path='/about' element = {<About/>}></Route>
-            <Route path='/sign-in' element = {<Signin showAlert = {showAlert} />}></Route>
-            <Route path='/sign-up' element = {<Signup showAlert = {showAlert} />}></Route>
+            <Route path='/sign-in' element = {<Signin showAlert = {showAlert} setprogress= {setprogress} />}></Route>
+            <Route path='/sign-up' element = {<Signup showAlert = {showAlert} setprogress= {setprogress} />}></Route>
             <Route path="*" element = {<Navigate to= "/" />} />
           </Routes>
         </Router>
